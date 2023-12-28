@@ -7,7 +7,7 @@ import {
   Link,
 } from "react-router-dom";
 import { useState } from "react";
-import Subjects from "./components/subjects/subjects";
+import Subjects from "./components/subjects/Subjects";
 import SubjectDetiles from "./components/subjects/SubjectDetiles";
 
 const Dashboard = () => <h1>Dashboasdfsrd</h1>;

@@ -1,0 +1,10 @@
+.subjects{
+    display: flex;
+    flex-wrap: wrap;
+}
+.subjects div{
+    margin: 10px;
+}
+.subject-link{
+    text-decoration: none;
+}

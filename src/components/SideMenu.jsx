@@ -6,10 +6,10 @@ import MenuItem from "./MenuItem";
 
 export const menuItems = [
   {
-    name: "Dashboard",
+    name: "Notice Board",
     exact: true,
     to: "/",
-    iconClassName: "bi bi-speedometer2",
+    iconClassName: "bi bi-megaphone",
   },
   { name: "Subjects", to: `/subjects`, iconClassName: "bi bi-book" },
   {

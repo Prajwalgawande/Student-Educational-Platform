@@ -10,6 +10,7 @@ import { useState } from "react";
 import Subjects from "./components/subjects/Subjects";
 import SubjectDetiles from "./components/subjects/SubjectDetiles";
 import Meetings from "./components/meetings/Meetings";
+import NoticeBoard from "./components/notice-board/NoticeBoard";
 
 const Dashboard = () => <h1>Dashboard</h1>;
 const Content = () => <h1>Content</h1>;
@@ -59,7 +60,7 @@ function App() {
             )} */}
 
             {/* Example routes with components */}
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<NoticeBoard />} />
             <Route path="/subjects" element={<Subjects />} />
             <Route path="/subject/:subjectId" element={<SubjectDetiles/>} />
             <Route path="/content" element={<Content />} />

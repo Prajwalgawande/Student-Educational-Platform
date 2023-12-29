@@ -266,9 +266,16 @@ body{
 
 .title-bar{
   display: flex;
-  width: 70vw;
   justify-content: space-between;
+  box-shadow: 4px 4px 2px rgb(39, 40, 40) ;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 .title-bar i{
   font-size: 20px;
+}
+
+
+.tabs{
+  color: black;
 }

@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 
 function Subject({subject,teacher}) {
   return (
-    <Card style={{ width: '18rem' }}>
+    <Card style={{ width: '16rem' }}>
       <Card.Body>
         <Card.Title>{subject}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">Teacher: {teacher}</Card.Subtitle>

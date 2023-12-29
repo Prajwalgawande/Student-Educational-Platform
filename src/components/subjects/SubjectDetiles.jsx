@@ -6,7 +6,7 @@ const SubjectDetiles = () => {
     const { subjectId } = useParams();
 
   return (
-    <Nav variant="tabs" defaultActiveKey="/discussion">
+    <Nav variant="tabs" defaultActiveKey="subjects/${subjectId}/detiles" className='tabs'>
       <Nav.Item>
         <Nav.Link href={`subjects/${subjectId}/detiles`}>Detiles</Nav.Link>
       </Nav.Item>
@@ -18,9 +18,6 @@ const SubjectDetiles = () => {
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="/assignments">Assignments</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link href="/meetings">Meetings</Nav.Link>
       </Nav.Item>
     </Nav>
   )

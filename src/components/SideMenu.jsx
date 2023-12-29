@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from "../assets/logo/webscript.png";
+import logo from "../assets/logo/logo.jpg";
 import user from "../assets/user.jpg";
 import MenuItem from "./MenuItem";
 
@@ -22,7 +22,7 @@ export const menuItems = [
       { name: "Videos", to: "/content/videos" },
     ],
   },
-  { name: "Design", to: `/design`, iconClassName: "bi bi-vector-pen" },
+  { name: "meetings", to: `/meetings`, iconClassName: "bi bi-calendar" },
   {
     name: "Content 2",
     exact: true,

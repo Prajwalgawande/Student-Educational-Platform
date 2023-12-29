@@ -9,8 +9,9 @@ import {
 import { useState } from "react";
 import Subjects from "./components/subjects/Subjects";
 import SubjectDetiles from "./components/subjects/SubjectDetiles";
+import Meetings from "./components/meetings/Meetings";
 
-const Dashboard = () => <h1>Dashboasdfsrd</h1>;
+const Dashboard = () => <h1>Dashboard</h1>;
 const Content = () => <h1>Content</h1>;
 const Courses = () => <h1>Content/Courses</h1>;
 const Videos = () => <h1>Content/Videos</h1>;
@@ -32,7 +33,9 @@ function App() {
           }}
         />
 
-        <div className={`container`} style={{ marginLeft: !inactive ? "300px" : "100px" }}>
+        <div className={`container`} 
+        style={!inactive?{ marginLeft:   "300px", width:"75vw" }:
+        {marginLeft:"100px",width:"90vw"}}>
           
           <Routes>
             {/* {menuItems.map((menu) => (
@@ -62,7 +65,7 @@ function App() {
             <Route path="/content" element={<Content />} />
             <Route path="/content/courses" element={<Courses />} />
             <Route path="/content/videos" element={<Videos />} />
-            <Route path="/design" element={<Design />} />
+            <Route path="/meetings" element={<Meetings />} />
             <Route path="/content-2" element={<Content2 />} />
             <Route path="/content-2/courses" element={<Courses2 />} />
             <Route path="/content-2/videos" element={<Videos2 />} />

@@ -8,9 +8,13 @@ import {
 } from "react-router-dom";
 import { useState } from "react";
 import Subjects from "./components/subjects/Subjects";
-import SubjectDetiles from "./components/subjects/SubjectDetiles";
+import SubjectDetiles from "./components/subjects/SubjectDetilesTab";
 import Meetings from "./components/meetings/Meetings";
 import NoticeBoard from "./components/notice-board/NoticeBoard";
+import ChatsTab from './components/chats-tab/ChatsTabs'
+import DetilesTab from './components/detiles-tab/DetilesTab'
+import NotesTab from './components/notes-tab/NotesTab'
+import AssignmentTab from './components/assignment-tab/AssignmentTab'
 
 const Dashboard = () => <h1>Dashboard</h1>;
 const Content = () => <h1>Content</h1>;
@@ -21,6 +25,13 @@ const Content2 = () => <h1>Content2</h1>;
 const Courses2 = () => <h1>Content/Courses 2</h1>;
 const Videos2 = () => <h1>Content/Videos 2</h1>;
 const Design2 = () => <h1>Design 2</h1>;
+
+
+
+// const DetailsComponent = () => <div><SubjectDetiles/>Discussion component content</div>;
+// const Discussion = () => <div>Discussion component content</div>;
+// const Notes = () => <div>Notes component content</div>;
+// const Assignments = () => <div>Assignments component content</div>;
 
 function App() {
   const [inactive, setInactive] = useState(false);
@@ -34,10 +45,10 @@ function App() {
           }}
         />
 
-        <div className={`container`} 
-        style={!inactive?{ marginLeft:   "300px", width:"75vw" }:
-        {marginLeft:"100px",width:"90vw"}}>
-          
+        <div className={`container`}
+          style={!inactive ? { marginLeft: "300px", width: "75vw" } :
+            { marginLeft: "100px", width: "90vw" }}>
+
           <Routes>
             {/* {menuItems.map((menu) => (
               <Route
@@ -62,7 +73,7 @@ function App() {
             {/* Example routes with components */}
             <Route path="/" element={<NoticeBoard />} />
             <Route path="/subjects" element={<Subjects />} />
-            <Route path="/subject/:subjectId" element={<SubjectDetiles/>} />
+            <Route path="/subject/:subjectId" element={<SubjectDetiles />} />
             <Route path="/content" element={<Content />} />
             <Route path="/content/courses" element={<Courses />} />
             <Route path="/content/videos" element={<Videos />} />
@@ -71,6 +82,10 @@ function App() {
             <Route path="/content-2/courses" element={<Courses2 />} />
             <Route path="/content-2/videos" element={<Videos2 />} />
             <Route path="/design-2" element={<Design2 />} />
+            <Route path={`/subject/:subjectId/details`} element={<DetilesTab />} />
+            <Route path={`/subject/:subjectId/discussion`} element={<ChatsTab />} />
+            <Route path={`/subject/:subjectId/notes`} element={<NotesTab />} />
+            <Route path={`/subject/:subjectId/assignments`} element={<AssignmentTab />} />
           </Routes>
         </div>
       </Router>

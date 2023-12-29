@@ -15,7 +15,6 @@ const Meetings = () => {
       end: '2023-12-10T15:00:00',
     },
   ];
-
   return (
     <div>
       <h2>Meeting Schedule</h2>

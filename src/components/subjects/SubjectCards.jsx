@@ -1,6 +1,6 @@
 import Card from 'react-bootstrap/Card';
 
-function Subject({subject,teacher}) {
+function SubjectCards({subject,teacher}) {
   return (
     <Card style={{ width: '16rem' }}>
       <Card.Body>
@@ -16,4 +16,4 @@ function Subject({subject,teacher}) {
   );
 }
 
-export default Subject;
+export default SubjectCards;

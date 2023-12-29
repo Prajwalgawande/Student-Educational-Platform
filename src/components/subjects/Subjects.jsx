@@ -1,6 +1,6 @@
 import React from 'react'
 import PageTitle from '../page-title/PageTitle'
-import Subject from './Subject'
+import Subject from './SubjectCards'
 import './subjects.css'
 import { Link } from 'react-router-dom';
 
@@ -42,6 +42,24 @@ const Subjects = () => {
       teacher:"Faculty name",
       desc:"It is description"
     },
+    {
+      id:7,
+      name:"Math",
+      teacher:"Faculty name",
+      desc:"It is description"
+    },
+    {
+      id:8,
+      name:"Math",
+      teacher:"Faculty name",
+      desc:"It is description"
+    },
+    {
+      id:9,
+      name:"Math",
+      teacher:"Faculty name",
+      desc:"It is description"
+    },
   ]
   return (
     <div>
@@ -50,7 +68,7 @@ const Subjects = () => {
       {subjects.map((sub) => (
         <Link
           key={sub.id}
-          to={`/subject/${sub.id}`}
+          to={`/subject/${sub.id}/details`}
           className="subject-link"
         >
           <Subject subject={sub.name} teacher={sub.teacher} />

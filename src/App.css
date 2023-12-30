@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+.App{
+  background-color: #F6F8FF;
+  min-height: 100vh;
+}
 ul{
   padding: 0;
   margin: 0;
@@ -43,7 +47,7 @@ body{
 
 .side-menu{
   position: fixed;
-  background: #000;
+  background: #FFFFFF;
   width: 300px;
   height: 100%;
   box-sizing: border-box;
@@ -98,25 +102,28 @@ body{
   background: transparent;
   border: 0;
   font-size: 20px;
-  color: #666;
+  color: #000000;
 }
 
 .side-menu .search-controller input[type=text]{
   border: 0;
   outline: none;
   height: 35px;
-  background: #131628;
+  background: #f0f4ff;
   border-radius: 5px;
   display: block;
   margin: 20px 0;
   width: 100%;
   box-sizing: border-box;
   padding-left: 40px;
-  color: #fff;
+  color: #000000;
+}
+.side-menu .search-controller input[type=text]:focus{
+  background: #e2e7fa;
 }
 
 .side-menu .main-menu .menu-item{
-  color: #969696;
+  color: #000000;
   text-decoration: none;
   font-size: 15px;
   display: block;
@@ -125,9 +132,9 @@ body{
 }
 
 .side-menu .main-menu .menu-item.active{
-  background: #131628;
+  background: #4F80E1;
   border-radius: 5px;
-  color: #fff;
+  color: #000000;
 }
 
 
@@ -165,7 +172,7 @@ body{
 }
 
 .side-menu .main-menu .sub-menu{
-  color: #333;
+  color: #000000;
   margin-left: 20px;
   border-left: 1px solid #666;
   box-sizing: border-box;
@@ -187,33 +194,39 @@ body{
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-  color: #818181;
+  color: #000000;
   box-sizing: border-box;
   padding: 5px;
 }
 
 .logo{
   display: flex;
-  color: #fff;
+  color: #000000;
 }
 .side-menu .main-menu .sub-menu a.active{
   /* change in background, not recorded in video */
-  background: #222;
+  background: #4F80E1;
   display: block;
   
   border-radius: 5px;
-  color: #fff;
+  color: #000000;
 
 }
 
 .side-menu-footer{
   width: 100%;
-  background: #1a1a27;
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 20px;
   box-sizing: border-box;
+}
+.logout{
+  background: #F6F8FF;
+  margin: 0;
+  cursor: pointer;
+  padding: 10px 40px;
+  
 }
 
 .side-menu-footer .avatar{
@@ -230,7 +243,7 @@ body{
 .side-menu-footer .user-info{
   display: inline-block;
   margin: 0 10px;
-  color: #fff;
+  color: #000000;
   position: absolute;
   opacity: 1;
   transition: opacity .2s ease-in;
@@ -269,7 +282,6 @@ body{
 .title-bar{
   display: flex;
   justify-content: space-between;
-  box-shadow: 4px 4px 2px rgb(39, 40, 40) ;
   margin-bottom: 10px;
   padding: 10px;
 }
@@ -279,7 +291,7 @@ body{
 
 
 .tabs{
-  color: black;
+  color: #000000;
 }
 
 

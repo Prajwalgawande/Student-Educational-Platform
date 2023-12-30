@@ -46,15 +46,17 @@ const ChatsTabs = () => {
           containerRef={(ref) => (chatContainerRef.current = ref)}
           style={{ maxHeight: containerHeight }}
         >
-          <div className="mb-3 border rounded p-3 d-flex flex-column-reverse" style={{ maxHeight: containerHeight }}>
+          <div className="mb-3 border rounded p-3 d-flex flex-column-reverse " style={{ maxHeight: containerHeight }}>
             {chatMessages.slice().reverse().map((message) => (
               <div
                 key={message.id}
-                className={`mb-3 p-2 rounded ${message.sender === 'You'
-                    ? 'bg-primary text-white align-self-end'
-                    : 'bg-secondary text-white align-self-start'
-                  }`}
-                style={{ width: '50%' }}
+                className={`mb-3 p-2 rounded`}
+                style={{
+                  width: '50%',
+                  background: message.sender === 'You' ? '#d4e4f5' : '#c0c0c0',
+                  color: '#000000',
+                  alignSelf: message.sender === 'You' ? 'flex-end' : 'flex-start',
+                }}
               >
                 <div className="mb-2 text-muted">
                   <strong>{message.sender}</strong> ({message.timestamp})

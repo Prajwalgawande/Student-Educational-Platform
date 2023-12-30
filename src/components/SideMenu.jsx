@@ -137,12 +137,9 @@ const SideMenu = (props) => {
       </div>
 
       <div className="side-menu-footer">
-        <div className="avatar">
-          <img src={user} alt="user" />
-        </div>
-        <div className="user-info">
-          <h5>user name</h5>
-          <p>username.com</p>
+      <div className="logout-icon logout" >
+          <span className=" fw-semibold fs-5">Logout</span>
+          <i className="bi bi-box-arrow-right m-3 fs-5"></i>
         </div>
       </div>
     </div>

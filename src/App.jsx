@@ -16,6 +16,7 @@ import ChatsTab from './components/chats-tab/ChatsTabs'
 import DetilesTab from './components/detiles-tab/DetilesTab'
 import NotesTab from './components/notes-tab/NotesTab'
 import AssignmentTab from './components/assignment-tab/AssignmentTab'
+import TopNavbar from "./components/Navbar/Navbar";
 
 const Dashboard = () => <h1>Dashboard</h1>;
 const Content = () => <h1>Content</h1>;
@@ -37,7 +38,7 @@ const Webinars = () => <h1>Webinars</h1>;
 
 function App() {
   const isSmallScreen = useMediaQuery({ query: '(max-width: 991.98px)' });
-  console.log("screensmal",isSmallScreen);
+  console.log("screensmal", isSmallScreen);
   const [inactive, setInactive] = useState(isSmallScreen);
 
   return (
@@ -48,11 +49,11 @@ function App() {
             setInactive(inactive);
           }}
         />
-
         <div className={`container`}
           style={!inactive ? { marginLeft: "300px", width: "72vw" } :
             { marginLeft: "40px", width: "100%" }}>
 
+          <TopNavbar />
           <Routes>
             {/* {menuItems.map((menu) => (
               <Route

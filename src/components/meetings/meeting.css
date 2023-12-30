@@ -1,0 +1,50 @@
+/* Meetings.css */
+
+/* Header styles */
+h2 {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Calendar styles */
+  .calendar {
+    margin-bottom: 20px;
+  }
+  
+  /* Ongoing and Upcoming Classes styles */
+  ListGroup.Item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  ListGroup.Item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  ListGroup.Item div {
+    max-width: 80%;
+  }
+  
+  Badge {
+    font-size: 14px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 767px) {
+    h5 {
+      font-size: 18px;
+    }
+  
+    ListGroup.Item {
+      font-size: 14px;
+    }
+  
+    Badge {
+      font-size: 12px;
+    }
+  }
+  

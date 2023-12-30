@@ -17,6 +17,8 @@ import DetilesTab from './components/detiles-tab/DetilesTab'
 import NotesTab from './components/notes-tab/NotesTab'
 import AssignmentTab from './components/assignment-tab/AssignmentTab'
 import TopNavbar from "./components/Navbar/Navbar";
+import Webinars from "./components/Webinars/Webinars";
+import WebinarDetail from "./components/webinar-detiles/WebinarDetiles";
 
 const Dashboard = () => <h1>Dashboard</h1>;
 const Content = () => <h1>Content</h1>;
@@ -27,14 +29,7 @@ const Content2 = () => <h1>Content2</h1>;
 const Courses2 = () => <h1>Content/Courses 2</h1>;
 const Videos2 = () => <h1>Content/Videos 2</h1>;
 const Design2 = () => <h1>Design 2</h1>;
-const Webinars = () => <h1>Webinars</h1>;
 
-
-
-// const DetailsComponent = () => <div><SubjectDetiles/>Discussion component content</div>;
-// const Discussion = () => <div>Discussion component content</div>;
-// const Notes = () => <div>Notes component content</div>;
-// const Assignments = () => <div>Assignments component content</div>;
 
 function App() {
   const isSmallScreen = useMediaQuery({ query: '(max-width: 991.98px)' });
@@ -88,6 +83,7 @@ function App() {
             <Route path="/content-2/videos" element={<Videos2 />} />
             <Route path="/design-2" element={<Design2 />} />
             <Route path="/webinars" element={<Webinars />} />
+            <Route path="/webinars/:id" element={<WebinarDetail />} />
             <Route path={`/subject/:subjectId/details`} element={<DetilesTab />} />
             <Route path={`/subject/:subjectId/discussion`} element={<ChatsTab />} />
             <Route path={`/subject/:subjectId/notes`} element={<NotesTab />} />

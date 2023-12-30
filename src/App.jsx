@@ -7,6 +7,7 @@ import {
   Link,
 } from "react-router-dom";
 import { useState } from "react";
+import { useMediaQuery } from 'react-responsive';
 import Subjects from "./components/subjects/Subjects";
 import SubjectDetiles from "./components/subjects/SubjectDetilesTab";
 import Meetings from "./components/meetings/Meetings";
@@ -25,6 +26,7 @@ const Content2 = () => <h1>Content2</h1>;
 const Courses2 = () => <h1>Content/Courses 2</h1>;
 const Videos2 = () => <h1>Content/Videos 2</h1>;
 const Design2 = () => <h1>Design 2</h1>;
+const Webinars = () => <h1>Webinars</h1>;
 
 
 
@@ -34,7 +36,9 @@ const Design2 = () => <h1>Design 2</h1>;
 // const Assignments = () => <div>Assignments component content</div>;
 
 function App() {
-  const [inactive, setInactive] = useState(false);
+  const isSmallScreen = useMediaQuery({ query: '(max-width: 991.98px)' });
+  console.log("screensmal",isSmallScreen);
+  const [inactive, setInactive] = useState(isSmallScreen);
 
   return (
     <div className="App">
@@ -46,8 +50,8 @@ function App() {
         />
 
         <div className={`container`}
-          style={!inactive ? { marginLeft: "300px", width: "75vw" } :
-            { marginLeft: "100px", width: "90vw" }}>
+          style={!inactive ? { marginLeft: "300px", width: "72vw" } :
+            { marginLeft: "40px", width: "100%" }}>
 
           <Routes>
             {/* {menuItems.map((menu) => (
@@ -82,6 +86,7 @@ function App() {
             <Route path="/content-2/courses" element={<Courses2 />} />
             <Route path="/content-2/videos" element={<Videos2 />} />
             <Route path="/design-2" element={<Design2 />} />
+            <Route path="/webinars" element={<Webinars />} />
             <Route path={`/subject/:subjectId/details`} element={<DetilesTab />} />
             <Route path={`/subject/:subjectId/discussion`} element={<ChatsTab />} />
             <Route path={`/subject/:subjectId/notes`} element={<NotesTab />} />

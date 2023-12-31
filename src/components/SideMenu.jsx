@@ -70,7 +70,7 @@ const SideMenu = (props) => {
 
   return (
     <>
-        <div onClick={() => setInactive(!inactive)} className={`toggle-menu-btn ${inactive ? "inactive" : ""}`}>
+        <div style={{position:"fixed"}} onClick={() => setInactive(!inactive)} className={`toggle-menu-btn ${inactive ? "inactive" : ""}`}>
           {inactive ? (
             <i className="bi bi-arrow-right-square-fill"></i>
           ) : (
@@ -96,7 +96,7 @@ const SideMenu = (props) => {
       <div className="divider"></div>
 
       <div className="main-menu">
-        <ul>
+        <ul c>
           {menuItems.map((menuItem, index) => (
             <MenuItem
               key={index}
@@ -135,7 +135,6 @@ const SideMenu = (props) => {
           </li> */}
         </ul>
       </div>
-
       <div className="side-menu-footer">
       <div className="logout-icon logout" >
           <span className=" fw-semibold fs-5">Logout</span>

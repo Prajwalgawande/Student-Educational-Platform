@@ -46,7 +46,7 @@ const ChatsTabs = () => {
           containerRef={(ref) => (chatContainerRef.current = ref)}
           style={{ maxHeight: containerHeight }}
         >
-          <div className="mb-3 border rounded p-3 d-flex flex-column-reverse " style={{ maxHeight: containerHeight }}>
+          <div className="mb-3 border rounded p-3 d-flex flex-column-reverse " >
             {chatMessages.slice().reverse().map((message) => (
               <div
                 key={message.id}

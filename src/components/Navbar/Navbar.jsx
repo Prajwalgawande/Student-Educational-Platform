@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import userImage from '../../assets/user.jpg';
+import { Link } from 'react-router-dom';
 
 const TopNavbar = () => {
   const username = 'John Doe';
@@ -29,7 +30,7 @@ const formattedDate = currentDate.toLocaleDateString('en-US', options);
             </Nav.Link>
 
             <NavDropdown title={username} id="basic-nav-dropdown">
-              <NavDropdown.Item href="#">Profile</NavDropdown.Item>
+              <NavDropdown.Item href="#"><Link style={{textDecoration:"none",color:"black"}} to={'/profile/:userid'}>Profile</Link></NavDropdown.Item>
               <NavDropdown.Item href="#">Settings</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#">Logout</NavDropdown.Item>

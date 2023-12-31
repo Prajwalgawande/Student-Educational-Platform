@@ -19,6 +19,7 @@ import AssignmentTab from './components/assignment-tab/AssignmentTab'
 import TopNavbar from "./components/Navbar/Navbar";
 import Webinars from "./components/Webinars/Webinars";
 import WebinarDetail from "./components/webinar-detiles/WebinarDetiles";
+import ProfilePage from "./components/profile-page/Profile";
 
 const Dashboard = () => <h1>Dashboard</h1>;
 const Content = () => <h1>Content</h1>;
@@ -78,6 +79,7 @@ function App() {
             <Route path="/content/courses" element={<Courses />} />
             <Route path="/content/videos" element={<Videos />} />
             <Route path="/meetings" element={<Meetings />} />
+            <Route path="/profile/:userid" element={<ProfilePage />} />
             <Route path="/content-2" element={<Content2 />} />
             <Route path="/content-2/courses" element={<Courses2 />} />
             <Route path="/content-2/videos" element={<Videos2 />} />

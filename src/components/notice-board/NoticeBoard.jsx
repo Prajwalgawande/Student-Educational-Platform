@@ -1,9 +1,135 @@
-import React from 'react'
-import "./noticeboard.css"
+import React from "react";
+import "./noticeboard.css";
 const NoticeBoard = () => {
   return (
-    <div>NoticeBoard</div>
-  )
-}
+    <div className="noticebar">
+      <div className="mainnoticecontainer">
+        <div className="mainnotice">
+          <h1>Please !! Take A Note of</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic fugit
+            earum voluptatibus accusamus necessitatibus eligendi, quas vero
+            incidunt aperiam eos nisi! Rem possimus similique consequuntur
+            laborum at nisi ad ducimus.
+          </p>
+        </div>
+        <div className="tty">
+          <span>Yesterday</span>
+          <span>Today</span>
+          <span>Tommorrow</span>
+        </div>
+        <div className="othernotice">
 
-export default NoticeBoard
+          <div className="subnotice">
+            <h3 className="heading">
+              <img
+                src="https://img.freepik.com/free-photo/widely-smiling-businesswoman-working-laptop-sitting-cafe_197531-341.jpg"
+                alt=""
+              />{" "}
+              How to Create Video Ads That Convert on Facebook and YouTube
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+              tempore ut voluptatum doloremque dignissimos, adipisci quos
+              voluptatibus iusto corrupti inventore ratione sapiente aperiam
+            </p>
+          </div>
+
+          <div className="subnotice">
+            <h3 className="heading">
+              <img
+                src="https://img.freepik.com/free-photo/widely-smiling-businesswoman-working-laptop-sitting-cafe_197531-341.jpg"
+                alt=""
+              />{" "}
+              How to Create Video Ads That Convert on Facebook and YouTube
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+              tempore ut voluptatum doloremque dignissimos, adipisci quos
+              voluptatibus iusto corrupti inventore ratione sapiente aperiam
+            </p>
+          </div>
+
+          <div className="subnotice">
+            <h3 className="heading">
+              <img
+                src="https://img.freepik.com/free-photo/widely-smiling-businesswoman-working-laptop-sitting-cafe_197531-341.jpg"
+                alt=""
+              />{" "}
+              How to Create Video Ads That Convert on Facebook and YouTube
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+              tempore ut voluptatum doloremque dignissimos, adipisci quos
+              voluptatibus iusto corrupti inventore ratione sapiente aperiam
+            </p>
+          </div>
+
+          <div className="subnotice">
+            <h3 className="heading">
+              <img
+                src="https://img.freepik.com/free-photo/widely-smiling-businesswoman-working-laptop-sitting-cafe_197531-341.jpg"
+                alt=""
+              />{" "}
+              How to Create Video Ads That Convert on Facebook and YouTube
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+              tempore ut voluptatum doloremque dignissimos, adipisci quos
+              voluptatibus iusto corrupti inventore ratione sapiente aperiam
+            </p>
+          </div>
+
+          <div className="subnotice">
+            <h3 className="heading">
+              <img
+                src="https://img.freepik.com/free-photo/widely-smiling-businesswoman-working-laptop-sitting-cafe_197531-341.jpg"
+                alt=""
+              />{" "}
+              How to Create Video Ads That Convert on Facebook and YouTube
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+              tempore ut voluptatum doloremque dignissimos, adipisci quos
+              voluptatibus iusto corrupti inventore ratione sapiente aperiam
+            </p>
+          </div>
+
+          <div className="subnotice">
+            <h3 className="heading">
+              <img
+                src="https://img.freepik.com/free-photo/widely-smiling-businesswoman-working-laptop-sitting-cafe_197531-341.jpg"
+                alt=""
+              />{" "}
+              How to Create Video Ads That Convert on Facebook and YouTube
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+              tempore ut voluptatum doloremque dignissimos, adipisci quos
+              voluptatibus iusto corrupti inventore ratione sapiente aperiam
+            </p>
+          </div>
+
+          <div className="subnotice">
+            <h3 className="heading">
+              <img
+                src="https://img.freepik.com/free-photo/widely-smiling-businesswoman-working-laptop-sitting-cafe_197531-341.jpg"
+                alt=""
+              />{" "}
+              How to Create Video Ads That Convert on Facebook and YouTube
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+              tempore ut voluptatum doloremque dignissimos, adipisci quos
+              voluptatibus iusto corrupti inventore ratione sapiente aperiam
+            </p>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default NoticeBoard;

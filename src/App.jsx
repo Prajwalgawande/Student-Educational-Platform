@@ -20,6 +20,7 @@ import TopNavbar from "./components/Navbar/Navbar";
 import Webinars from "./components/Webinars/Webinars";
 import WebinarDetail from "./components/webinar-detiles/WebinarDetiles";
 import ProfilePage from "./components/profile-page/Profile";
+import SidemenuR from "./components/R_SideMenu/Sidemenu"
 
 const Dashboard = () => <h1>Dashboard</h1>;
 const Content = () => <h1>Content</h1>;
@@ -46,10 +47,11 @@ function App() {
           }}
         />
         <div className={`container`}
-          style={!inactive ? { marginLeft: "300px", width: "72vw" } :
+          style={!inactive ? { marginLeft: "300px", width: "64vw" } :
             { marginLeft: "40px", width: "100%" }}>
 
           <TopNavbar />
+          
           <Routes>
             {/* {menuItems.map((menu) => (
               <Route
@@ -91,6 +93,9 @@ function App() {
             <Route path={`/subject/:subjectId/notes`} element={<NotesTab />} />
             <Route path={`/subject/:subjectId/assignments`} element={<AssignmentTab />} />
           </Routes>
+        </div>
+        <div style={{position:"absolute", top:"10px", right:"10px"}}>
+          <SidemenuR/>
         </div>
       </Router>
     </div>

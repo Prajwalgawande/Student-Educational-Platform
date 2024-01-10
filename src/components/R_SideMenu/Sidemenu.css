@@ -1,9 +1,11 @@
 .Rsidebar{
     border: 1px solid rgba(237, 240, 253, 0.752);
-    width: 17rem;
+    width: 29vw;
+    margin: 0 0px 0 30px;
     height: 100vh;
     background-color: rgb(164, 205, 238);
     display: flex;
+    overflow-x: hidden;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;

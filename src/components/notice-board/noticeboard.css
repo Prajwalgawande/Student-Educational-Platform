@@ -1,9 +1,11 @@
-.noticebar {
-    width: 100%;
+.mainnoticecontainer {
+    width: 70%;
     height: 100vh;
     background-color: rgb(247, 247, 247);
 }
-
+.noticeboard{
+    display: flex;
+}
 .tty {
     background-color: #001d7a;
     border: 1px solid #f0f4ff;
@@ -71,7 +73,7 @@
 
 .subnotice {
     min-width: 610px;
-    max-height: 120px;
+    /* max-height: 120px; */
     border-radius: 10px;
     padding: 0.5rem;
     margin: 0.5rem;

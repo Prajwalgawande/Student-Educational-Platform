@@ -47,7 +47,7 @@ function App() {
           }}
         />
         <div className={`container`}
-          style={!inactive ? { marginLeft: "300px", width: "64vw" } :
+          style={!inactive ? { marginLeft: "300px", width: "72vw" } :
             { marginLeft: "40px", width: "100%" }}>
 
           <TopNavbar />
@@ -93,9 +93,6 @@ function App() {
             <Route path={`/subject/:subjectId/notes`} element={<NotesTab />} />
             <Route path={`/subject/:subjectId/assignments`} element={<AssignmentTab />} />
           </Routes>
-        </div>
-        <div style={{position:"absolute", top:"10px", right:"10px"}}>
-          <SidemenuR/>
         </div>
       </Router>
     </div>

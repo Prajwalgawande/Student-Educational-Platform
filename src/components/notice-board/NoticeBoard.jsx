@@ -1,9 +1,9 @@
 import React from "react";
 import "./noticeboard.css";
+import Sidemenu from "../R_SideMenu/Sidemenu";
 const NoticeBoard = () => {
   return (
-    <div className="noticebar">
-      <div className="mainnoticecontainer">
+    <>
         <div className="mainnotice">
           <h1>Please !! Take A Note of</h1>
           <p>
@@ -13,6 +13,8 @@ const NoticeBoard = () => {
             laborum at nisi ad ducimus.
           </p>
         </div>
+    <div className="noticeboard">
+      <div className="mainnoticecontainer">
         <div className="tty">
           <span>Yesterday</span>
           <span>Today</span>
@@ -128,7 +130,9 @@ const NoticeBoard = () => {
           
         </div>
       </div>
+      <Sidemenu/>
     </div>
+    </>
   );
 };
 

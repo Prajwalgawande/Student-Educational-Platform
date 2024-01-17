@@ -5,8 +5,9 @@ import {
   Routes,
   Route,
   Link,
+  useNavigate,
 } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMediaQuery } from 'react-responsive';
 import Subjects from "./components/subjects/Subjects";
 import SubjectDetiles from "./components/subjects/SubjectDetilesTab";
@@ -20,13 +21,12 @@ import TopNavbar from "./components/Navbar/Navbar";
 import Webinars from "./components/Webinars/Webinars";
 import WebinarDetail from "./components/webinar-detiles/WebinarDetiles";
 import ProfilePage from "./components/profile-page/Profile";
-import SidemenuR from "./components/R_SideMenu/Sidemenu"
+import Login from './components/Login/Login'
+import Signup from './components/Signup/Signup'
 
-const Dashboard = () => <h1>Dashboard</h1>;
 const Content = () => <h1>Content</h1>;
 const Courses = () => <h1>Content/Courses</h1>;
 const Videos = () => <h1>Content/Videos</h1>;
-const Design = () => <h1>Design</h1>;
 const Content2 = () => <h1>Content2</h1>;
 const Courses2 = () => <h1>Content/Courses 2</h1>;
 const Videos2 = () => <h1>Content/Videos 2</h1>;
@@ -37,20 +37,37 @@ function App() {
   const isSmallScreen = useMediaQuery({ query: '(max-width: 991.98px)' });
   console.log("screensmal", isSmallScreen);
   const [inactive, setInactive] = useState(isSmallScreen);
-
+  const [validuser, setValiduser]=useState(false);
+  const navigate = useNavigate();
+  const authenticationflag=(flag)=>{
+    setValiduser(flag);
+  }
+  useEffect(() => {
+    let url=window.location.pathname;
+    console.log(url);
+    if (!validuser && url!=='/signup' ) {
+      navigate('/login');
+    }
+  }, [validuser, navigate]);
   return (
     <div className="App">
-      <Router>
+      {!validuser && 
+        <Routes>
+        <Route path="/login" element={<Login authvalidation={authenticationflag}/>} />
+        <Route path="/signup" element={<Signup authvalidation={authenticationflag}/>} />
+        </Routes>}
+      {validuser &&<>
         <SideMenu
           onCollapse={(inactive) => {
             setInactive(inactive);
           }}
+          authvalidation={authenticationflag}
         />
         <div className={`container`}
           style={!inactive ? { marginLeft: "300px", width: "72vw" } :
             { marginLeft: "40px", width: "100%" }}>
 
-          <TopNavbar />
+          <TopNavbar  authvalidation={authenticationflag} />
           
           <Routes>
             {/* {menuItems.map((menu) => (
@@ -94,8 +111,9 @@ function App() {
             <Route path={`/subject/:subjectId/assignments`} element={<AssignmentTab />} />
           </Routes>
         </div>
-      </Router>
+        </>}
     </div>
+
   );
 }
 

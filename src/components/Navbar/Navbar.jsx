@@ -1,13 +1,18 @@
 import React from 'react';
 import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
 import userImage from '../../assets/user.jpg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-const TopNavbar = () => {
+const TopNavbar = ({ authvalidation}) => {
   const username = 'John Doe';
   const current_Date=new Date();
   const currentDate = new Date();
+  const navigate=useNavigate();
 const options = { weekday: 'long', day: 'numeric', month: 'long' };
+const logout=()=>{
+authvalidation(false);
+navigate('/login');
+}
 
 const formattedDate = currentDate.toLocaleDateString('en-US', options);
   return (
@@ -33,7 +38,7 @@ const formattedDate = currentDate.toLocaleDateString('en-US', options);
               <NavDropdown.Item href="#"><Link style={{textDecoration:"none",color:"black"}} to={'/profile/:userid'}>Profile</Link></NavDropdown.Item>
               <NavDropdown.Item href="#">Settings</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#">Logout</NavDropdown.Item>
+              <NavDropdown.Item href="#" onClick={logout}>Logout</NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Link href="#" className="ms-2">

@@ -3,6 +3,7 @@ import logo from "../assets/logo/logo.jpg";
 import user from "../assets/user.jpg";
 import MenuItem from "./MenuItem";
 import { useMediaQuery } from 'react-responsive';
+import { useNavigate } from "react-router-dom";
 
 export const menuItems = [
   {
@@ -33,6 +34,7 @@ export const menuItems = [
 const SideMenu = (props) => {
   const isSmallScreen = useMediaQuery({ query: '(max-width: 991.98px)' });
   const [inactive, setInactive] = useState(isSmallScreen);
+  const navigate=useNavigate();
 
   useEffect(() => {
     if (inactive) {
@@ -67,7 +69,10 @@ const SideMenu = (props) => {
       });
     });
   }, []);
-
+const logout=()=>{
+props.authvalidation(false);
+navigate("/login")
+}
   return (
     <>
         <div style={{position:"fixed"}} onClick={() => setInactive(!inactive)} className={`toggle-menu-btn ${inactive ? "inactive" : ""}`}>
@@ -136,7 +141,7 @@ const SideMenu = (props) => {
         </ul>
       </div>
       <div className="side-menu-footer">
-      <div className="logout-icon logout" >
+      <div className="logout-icon logout" onClick={logout}>
           <span className=" fw-semibold fs-5">Logout</span>
           <i className="bi bi-box-arrow-right m-3 fs-5"></i>
         </div>

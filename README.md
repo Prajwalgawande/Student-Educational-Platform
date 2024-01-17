@@ -2,7 +2,7 @@
 
 ## Introduction
 
-![Project Introduction](image.png)
+![Project Introduction](introduction-image.png)
 
 SEP is an initiative under the GOOGLE SOLUTION CHALLENGE 23-24, addressing UN Sustainable Development Goal 4: Quality Education. This platform is designed by the team at SSGMC Gemini, and aims to enhance the educational experience for students and educators alike.
 

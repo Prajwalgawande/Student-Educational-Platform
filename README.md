@@ -27,13 +27,13 @@ The flowchart provides a visual representation of the software development lifec
 
 ## Requirements
 
-![Requirements](path-to-image/requirements.png)
+![Requirements](requirements.png)
 
 A detailed list of functional and non-functional requirements such as User Registration & Authentication, User Profile Management, Real-Time Data Updates, Data Privacy, Performance, Scalability, User Experience, and Data Security.
 
 ## Project Plan
 
-![Project Plan](path-to-image/project-plan.png)
+![Project Plan](project-plan.png)
 
 An outline of the project plan including various phases like Initiation, Research & Planning, Architecture, Development, Deployment, and Maintenance.
 

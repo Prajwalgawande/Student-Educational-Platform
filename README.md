@@ -21,7 +21,7 @@ The data flow diagram illustrates the interactions between different stakeholder
 
 ## Flowchart
 
-![Flowchart](path-to-image/flowchart.png)
+![Flowchart](flowchart.png)
 
 The flowchart provides a visual representation of the software development lifecycle for the SEP, detailing each phase from planning to monitoring and maintenance.
 

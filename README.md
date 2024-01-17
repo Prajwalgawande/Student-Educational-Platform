@@ -15,7 +15,7 @@ SEP is an initiative under the GOOGLE SOLUTION CHALLENGE 23-24, addressing UN Su
 
 ## Data Flow Diagram
 
-![Data Flow Diagram](path-to-image/data-flow-diagram.png)
+![Data Flow Diagram](data-flow-diagram.png)
 
 The data flow diagram illustrates the interactions between different stakeholders (Institute Director, Learner, Teacher, and Cloud Service Provider) within the Educational Platform.
 

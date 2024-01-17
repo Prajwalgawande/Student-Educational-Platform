@@ -39,14 +39,14 @@ An outline of the project plan including various phases like Initiation, Researc
 
 ## Google Cloud Overview
 
-Google Cloud encompasses a vast array of products, technologies, and services designed for digital operations. It includes Google Cloud Platform, G Suite, machine learning tools, APIs, and enterprise Maps APIs, optimized for cloud performance from the outset&#8203;``【oaicite:4】``&#8203;.
+Google Cloud encompasses a vast array of products, technologies, and services designed for digital operations. It includes Google Cloud Platform, G Suite, machine learning tools, APIs, and enterprise Maps APIs, optimized for cloud performance from the outset.
 
 ### Key Features:
 
 - AI-optimized infrastructure including TPU Accelerators.
 - Comprehensive security and privacy standards.
 - Enterprise-appropriate engineering with integrated systems.
-- Customer-centric support with customer engineers, reliability engineers, and product engineers&#8203;``【oaicite:3】``&#8203;.
+- Customer-centric support with customer engineers, reliability engineers, and product engineers.
 
 ## Deploying on Google Cloud
 
@@ -55,11 +55,11 @@ To deploy applications on Google Cloud, developers can use services like Compute
 - Cloning source repositories.
 - Setting up initial code compilations.
 - Configuring and deploying instances for backend and frontend services.
-- Network configuration for communication between services&#8203;``【oaicite:2】``&#8203;.
+- Network configuration for communication between services.
 
 ### API and Services
 
-Google Cloud's API library provides links to tutorials, documentation, and API Explorer for interactive testing. The API dashboard offers detailed information on API usage, traffic levels, error rates, and latencies, helping to quickly identify issues&#8203;``【oaicite:1】``&#8203;.
+Google Cloud's API library provides links to tutorials, documentation, and API Explorer for interactive testing. The API dashboard offers detailed information on API usage, traffic levels, error rates, and latencies, helping to quickly identify issues.
 
 ### Collaborations and Initiatives
 
